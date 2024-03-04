@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="messenger">
+        <div class="messenger__initial">
+          <input
+            class="messenger__input"
+            type="text"
+            placeholder="Enter your name"
+          />
+          <button class="messenger__btn">Start</button>
+        </div>
+        <div class="messenger__loader"></div>
+        <div class="messenger__chat" style="display: none">
+          <div class="messages"></div>
+          <textarea
+            class="messenger__input-message"
+            rows="4"
+            maxlength="300"
+            placeholder="Type your message..."
+          ></textarea>
+          <button class="messenger__input-message-btn">Send</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

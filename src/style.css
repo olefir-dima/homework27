@@ -1,0 +1,83 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.messenger {
+  width: 400px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.messenger__initial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.messenger__btn {
+  margin-top: 10px;
+}
+
+.messenger__loader {
+  display: none;
+  width: 100%;
+  height: 300px;
+  background-image: url("https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif");
+  background-size: cover;
+}
+
+.messenger__chat {
+  display: none;
+  flex-direction: column;
+}
+
+.messages {
+  height: 450px;
+  overflow-y: auto;
+}
+
+.message {
+  max-width: 70%;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 8px;
+}
+
+.message__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.message__time {
+  font-size: 12px;
+  color: #777;
+}
+
+.message__content {
+  margin: 0;
+}
+
+.align-right {
+  float: right;
+  width: 70%;
+  background-color: rgb(19, 209, 92);
+  color: black;
+}
+
+.align-left {
+  float: left;
+  width: 70%;
+  background-color: rgb(157, 155, 155);
+  color: black;
+}
